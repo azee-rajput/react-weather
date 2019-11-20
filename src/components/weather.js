@@ -87,9 +87,9 @@ class Weather extends Component{
         var url;
         
         if(!this.state.city){
-            url = "http://api.openweathermap.org/data/2.5/weather?lat="+this.state.latitude+"&lon="+this.state.longitude+"&APPID=585205b943a316d3502569db71a3fca9"
+            url = "https://api.openweathermap.org/data/2.5/weather?lat="+this.state.latitude+"&lon="+this.state.longitude+"&APPID=585205b943a316d3502569db71a3fca9"
         }else{
-            url = "http://api.openweathermap.org/data/2.5/weather?q="+this.state.city+"&APPID=585205b943a316d3502569db71a3fca9"
+            url = "https://api.openweathermap.org/data/2.5/weather?q="+this.state.city+"&APPID=585205b943a316d3502569db71a3fca9"
         }
 
         fetch(url)
@@ -124,7 +124,7 @@ class Weather extends Component{
 
     componentDidUpdate(){
         if(this.state.mounted){
-            fetch("http://api.openweathermap.org/data/2.5/forecast?lat="+this.state.latitude+"&lon="+this.state.longitude+"&APPID=585205b943a316d3502569db71a3fca9")
+            fetch("https://api.openweathermap.org/data/2.5/forecast?lat="+this.state.latitude+"&lon="+this.state.longitude+"&APPID=585205b943a316d3502569db71a3fca9")
             .then(response=>response.json())
             .then(data=>this.setState({
                     forecast:data.list,
