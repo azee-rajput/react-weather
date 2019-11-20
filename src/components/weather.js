@@ -444,10 +444,10 @@ class Weather extends Component{
                                         <td> Sunset <br/> <i className="las la-hourglass-end"></i></td>
                                         <td><h6>{this.state.sunset}</h6></td>
                                     </tr>
-                                    <tr>
+                                    {/* <tr>
                                         <td> Timezone <br/> <i className="las la-clock"></i></td>
                                         <td><h6>{this.state.timezone}</h6></td>
-                                    </tr>
+                                    </tr> */}
                                 </tbody>
                             </table>  
                         </div>
