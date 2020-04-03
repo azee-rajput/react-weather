@@ -1,7 +1,7 @@
 {
   "name": "react-weather",
   "version": "0.1.0",
-  "homepage" : "http://azee-rajput.github.io/react-weather",
+  "homepage" : "http://azee-rajput.github.io/old-weather",
   "private": true,
   "dependencies": {
     "gh-pages": "^2.1.1",
